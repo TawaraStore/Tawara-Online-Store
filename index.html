@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Tawara - Tecnología y Medicamentos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div style="text-align:center; margin: 20px;"><img src="logo-tawara.png" alt="Tawara Store Logo" style="max-width: 200px;"></div>
+
+<header>
+    <div class="logo">
+        <h1>Tienda Tawara</h1>
+        <p>¡Calidad y confianza a tu alcance!</p>
+    </div>
+    <div class="contacto">
+        <p>Contáctanos: <a href="https://wa.me/573001234567" target="_blank">+57 300 123 4567</a></p>
+    </div>
+</header>
+
+<nav>
+    <a href="#tecnologia">Tecnología</a>
+    <a href="#medicamentos">Medicamentos</a>
+    <a href="#carrito">Carrito</a>
+</nav>
+
+<main>
+
+<section class="productos" id="tecnologia">
+    <h2>Tecnología</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="https://via.placeholder.com/250" alt="Celular X1000">
+            <h3>Celular X1000</h3>
+            <p class="precio">$1.200.000 COP</p>
+            <button onclick="agregarAlCarrito('Celular X1000', 1200000)">Agregar al carrito</button>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/250" alt="Audífonos Pro">
+            <h3>Audífonos Pro</h3>
+            <p class="precio">$350.000 COP</p>
+            <button onclick="agregarAlCarrito('Audífonos Pro', 350000)">Agregar al carrito</button>
+        </div>
+    </div>
+</section>
+
+<section class="productos" id="medicamentos">
+    <h2>Medicamentos</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="https://via.placeholder.com/250" alt="Paracetamol 500mg">
+            <h3>Paracetamol 500mg</h3>
+            <p class="precio">$10.000 COP</p>
+            <button onclick="agregarAlCarrito('Paracetamol 500mg', 10000)">Agregar al carrito</button>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/250" alt="Ibuprofeno 400mg">
+            <h3>Ibuprofeno 400mg</h3>
+            <p class="precio">$12.000 COP</p>
+            <button onclick="agregarAlCarrito('Ibuprofeno 400mg', 12000)">Agregar al carrito</button>
+        </div>
+    </div>
+</section>
+
+<section id="carrito">
+    <h2>Carrito de Compras</h2>
+    <ul id="lista-carrito"></ul>
+    <p class="total">Total: $<span id="total">0</span> COP</p>
+    <button class="boton-pagar" onclick="procesarCompra()">Finalizar Compra</button>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2025 Tienda Tawara - Todos los derechos reservados.</p>
+    <div class="redes">
+        <a href="https://facebook.com" target="_blank">Facebook</a> |
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
